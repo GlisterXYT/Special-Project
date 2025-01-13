@@ -1,0 +1,24 @@
+{
+  "name": "rollbet-automation",
+  "version": "1.0.0",
+  "description": "Automation script for Rollbet",
+  "main": "Automate.js",
+  "bin": {
+    "automate-rollbet": "./Automate.js"
+  },
+  "scripts": {
+    "start": "node Automate.js"
+  },
+  "dependencies": {
+    "puppeteer-extra": "^3.1.18",
+    "puppeteer-core": "^10.2.0",
+    "puppeteer-extra-plugin-stealth": "^2.7.9",
+    "puppeteer-extra-plugin-adblocker": "^2.11.6"
+  },
+  "pkg": {
+    "scripts": "Automate.js",
+    "assets": [
+      "node_modules/puppeteer/.local-chromium/**/*"
+    ]
+  }
+}
